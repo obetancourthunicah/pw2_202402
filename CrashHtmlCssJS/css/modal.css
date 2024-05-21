@@ -1,0 +1,43 @@
+.modal {
+    display:flex;
+    width:100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.75);
+    position: fixed;
+    top:0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content{
+    background-color: #fff;
+    border-radius: 17px;
+    padding: 0.75rem;
+    width: 90%;
+}
+
+.modal-header {
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    display: block;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    font-weight: bold;
+    right: -5px;
+    top: -25px;
+}
+@media (min-width:720px) {
+    .modal-content {
+        min-width: 640px;
+        max-width: 710px;
+    }
+}

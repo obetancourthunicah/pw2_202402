@@ -11,7 +11,7 @@ var variable3 = "Hola Mundo";
 const datosProyectos = [
   {
     nombre: "Proyecto 1",
-    descripcion: "Descripcion del proyecto 1",
+    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nisi, quas qui illum laboriosam consequatur aliquid earum voluptates reiciendis quibusdam, quidem dolores temporibus ut esse porro. Eos aut minus error?",
     fechaInicio: "2021-01-01",
     fechaFin: "2021-01-31",
     imgUrl: "https://via.placeholder.com/150",
@@ -19,7 +19,7 @@ const datosProyectos = [
   },
   {
     nombre: "Proyecto 2",
-    descripcion: "Descripcion del proyecto 2",
+    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nisi, quas qui illum laboriosam consequatur aliquid earum voluptates reiciendis quibusdam, quidem dolores temporibus ut esse porro. Eos aut minus error?",
     fechaInicio: "2021-02-01",
     fechaFin: "2021-02-28",
     imgUrl: "https://via.placeholder.com/150",
@@ -27,7 +27,7 @@ const datosProyectos = [
   },
   {
     nombre: "Proyecto 3",
-    descripcion: "Descripcion del proyecto 3",
+    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nisi, quas qui illum laboriosam consequatur aliquid earum voluptates reiciendis quibusdam, quidem dolores temporibus ut esse porro. Eos aut minus error?",
     fechaInicio: "2021-03-01",
     fechaFin: "2021-03-31",
     imgUrl: "https://via.placeholder.com/150",
@@ -56,7 +56,8 @@ function populateProjects() {
     const h4 = document.createElement("h4");
     h4.textContent = proyecto.nombre;
     h4.addEventListener("click", () => {
-        myModal.showModal(proyecto.nombre, proyecto.descripcion);
+        const htmlDetail = `<p>${proyecto.descripcion}</p><p>${proyecto.descripcion}</p><img src="${proyecto.imgUrl}" />`;
+        myModal.showModal(proyecto.nombre, htmlDetail);
     });
     const p = document.createElement("p");
     p.textContent = `${proyecto.descripcion} | ${proyecto.fechaInicio} - ${proyecto.fechaFin}`;

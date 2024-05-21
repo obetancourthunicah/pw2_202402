@@ -7,12 +7,14 @@ body {
     font-size:100%;
     font-size:1rem;
 }
+
 header {
     display:flex;
+    flex-direction: column;
     background-color: #000;
     color:#eee;
     align-items: center;
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 0.5rem;
 }
 
 header img{
@@ -26,19 +28,22 @@ header h1{
     margin:0px;
     padding:0px 1rem;
     font-size: 1.5rem;
+    text-align: center;
     order:1;
 }
 
 header nav {
     flex: 1;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     order: 2;
+    width: 100%;
 }
-
 header nav ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
+    padding: 0;
 }
 
 header nav ul li a {
@@ -46,12 +51,37 @@ header nav ul li a {
     padding: 0.5rem 1rem;
     color : #eee;
     text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    header {
+        flex-direction: row;
+        padding: 0.5rem 1rem;
+    }
+    header h1 {
+        text-align: initial;
+    }
+    header nav {
+        justify-content: flex-end;
+        order: 2;
+        width: initial;
+    }
+    header nav ul {
+        flex-direction: row;
+    }
+    header nav ul li a {
+        text-align: initial;
+        width: initial;
+    }
 }
 
 footer {
     background-color: #444;
     color:#eee;
     display:flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     padding:1rem;
@@ -59,6 +89,9 @@ footer {
 
 footer ol, footer ul {
     list-style: none;
+    padding:0;
+    margin:0;
+    width:100%;
 }
 
 footer li a {
@@ -66,12 +99,28 @@ footer li a {
     padding: 0.5rem 1rem;
     color:#eee;
     text-decoration: none;
-
 }
 
+@media (min-width: 1024px) {
+    footer {
+        flex-direction: row;
+    }
+}
 
 main {
     padding: 1rem;
+}
+
+#sobremi {
+    padding:1rem;
+}
+
+#sobremi video, #sobremi audio {
+    width:100%;
+}
+
+#sobremi section {
+    overflow-x: auto;
 }
 
 #proyectos>section{
@@ -135,7 +184,7 @@ main {
 #contactame form input,
 #contactame form textarea {
     display: block;
-    min-width:280px;
+    min-width:180px;
     font-size: 1rem;
     padding:0.25rem 0.5rem;
     border: none;
