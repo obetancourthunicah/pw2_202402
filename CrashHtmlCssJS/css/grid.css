@@ -1,0 +1,242 @@
+.grid {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.row {
+    padding: 0.5rem 0.1rem;
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+[class*=col-] {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0.5rem;
+}
+
+
+.col-1 {
+    flex: 1 1 calc(100%/12);
+}
+
+.col-2 {
+    flex: 1 1 calc(100%/6);
+}
+
+.col-3 {
+    flex: 1 1 calc(100%/4);
+}
+
+.col-4 {
+    flex: 1 1 calc(100%/3);
+}
+
+.col-5 {
+    flex: 1 1 calc(100% * 5 / 12);
+}
+
+.col-6 {
+    flex: 1 1 calc(100%/2);
+}
+
+.col-7 {
+    flex: 1 1 calc(100% * 7 / 12);
+}
+
+.col-8 {
+    flex: 1 1 calc(100% * 2 / 3);
+}
+
+.col-9 {
+    flex: 1 1 calc(100% * 3 / 4);
+}
+
+.col-10 {
+    flex: 1 1 calc(100% * 5 / 6);
+}
+
+.col-11 {
+    flex: 1 1 calc(100% * 11 / 12);
+}
+
+.col-12 {
+    flex: 1 1 100%;
+}
+
+@media (min-width: 720px) {
+
+    .col-m-1 {
+        flex: 1 1 calc(100%/12);
+    }
+
+    .col-m-2 {
+        flex: 1 1 calc(100%/6);
+    }
+
+    .col-m-3 {
+        flex: 1 1 calc(100%/4);
+    }
+
+    .col-m-4 {
+        flex: 1 1 calc(100%/3);
+    }
+
+    .col-m-5 {
+        flex: 1 1 calc(100% * 5 / 12);
+    }
+
+    .col-m-6 {
+        flex: 1 1 calc(100%/2);
+    }
+
+    .col-m-7 {
+        flex: 1 1 calc(100% * 7 / 12);
+    }
+
+    .col-m-8 {
+        flex: 1 1 calc(100% * 2 / 3);
+    }
+
+    .col-m-9 {
+        flex: 1 1 calc(100% * 3 / 4);
+    }
+
+    .col-m-10 {
+        flex: 1 1 calc(100% * 5 / 6);
+    }
+
+    .col-m-11 {
+        flex: 1 1 calc(100% * 11 / 12);
+    }
+
+    .col-m-12 {
+        flex: 1 1 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .col-l-1 {
+        flex: 1 1 calc(100%/12);
+    }
+
+    .col-l-2 {
+        flex: 1 1 calc(100%/6);
+    }
+
+    .col-l-3 {
+        flex: 1 1 calc(100%/4);
+    }
+
+    .col-l-4 {
+        flex: 1 1 calc(100%/3);
+    }
+
+    .col-l-5 {
+        flex: 1 1 calc(100% * 5 / 12);
+    }
+
+    .col-l-6 {
+        flex: 1 1 calc(100%/2);
+    }
+
+    .col-l-7 {
+        flex: 1 1 calc(100% * 7 / 12);
+    }
+
+    .col-l-8 {
+        flex: 1 1 calc(100% * 2 / 3);
+    }
+
+    .col-l-9 {
+        flex: 1 1 calc(100% * 3 / 4);
+    }
+
+    .col-l-10 {
+        flex: 1 1 calc(100% * 5 / 6);
+    }
+
+    .col-l-11 {
+        flex: 1 1 calc(100% * 11 / 12);
+    }
+
+    .col-l-12 {
+        flex: 1 1 100%;
+    }
+}
+
+@media (min-width: 2000px) {
+
+    .col-xl-1 {
+        flex: 1 1 calc(100%/12);
+    }
+
+    .col-xl-2 {
+        flex: 1 1 calc(100%/6);
+    }
+
+    .col-xl-3 {
+        flex: 1 1 calc(100%/4);
+    }
+
+    .col-xl-4 {
+        flex: 1 1 calc(100%/3);
+    }
+
+    .col-xl-5 {
+        flex: 1 1 calc(100% * 5 / 12);
+    }
+
+    .col-xl-6 {
+        flex: 1 1 calc(100%/2);
+    }
+
+    .col-xl-7 {
+        flex: 1 1 calc(100% * 7 / 12);
+    }
+
+    .col-xl-8 {
+        flex: 1 1 calc(100% * 2 / 3);
+    }
+
+    .col-xl-9 {
+        flex: 1 1 calc(100% * 3 / 4);
+    }
+
+    .col-xl-10 {
+        flex: 1 1 calc(100% * 5 / 6);
+    }
+
+    .col-xl-11 {
+        flex: 1 1 calc(100% * 11 / 12);
+    }
+
+    .col-xl-12 {
+        flex: 1 1 100%;
+    }
+}
+
+
+/* Utilitarios */
+
+.col-center {
+    justify-content: center;
+}
+
+.col-middle {
+    justify-content: center;
+    align-items: center;
+}
+
+.col-right {
+    justify-content: flex-end;
+}
